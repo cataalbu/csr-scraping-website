@@ -1,0 +1,18 @@
+.product-list-container {
+  max-width: 100rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.product-items-container {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
