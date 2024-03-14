@@ -19,7 +19,9 @@ export default function useProducts() {
     // const token = sign({ user: 'csr-app' }, secretKey, { expiresIn: '1m' });
     // const token = '';
     const response = await fetch(
-      `http://localhost:8080/api/products?limit=20&page=${reqPage}`,
+      `${
+        import.meta.env.VITE_MOCK_API_URL
+      }/api/products?limit=20&page=${reqPage}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
